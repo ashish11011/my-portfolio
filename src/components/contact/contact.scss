@@ -1,0 +1,110 @@
+@import "../../app.scss";
+
+.contact{
+    height: 100%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    @include mobile{
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        gap: 30px;
+    }
+
+    .textContainer{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include mobile{
+            align-items: center;
+            text-align: center;
+            line-height: normal;
+            gap: 16px;
+            margin-top: 80px;
+        }
+
+        h1{
+            font-size: 100px;
+            line-height: 88px;
+
+            @include mobile{
+                font-size: 32px;
+                align-items: center;
+                text-align: center;
+                line-height: normal;
+            }
+        }
+
+        span{
+            font-weight: 300;
+
+            @include mobile{
+                font-size: 12px;
+            }
+        }
+    }
+
+    .formContainer{
+        flex: 1;
+        position: relative;
+
+        .phoneSvg{
+            stroke-width: 1px;
+            // stro
+            stroke: orange;
+            position: absolute;
+            margin: auto;
+            z-index: -1;
+
+            @include mobile{
+                display: none;
+                transition:none !important;
+            }
+        }
+
+        form{
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @include mobile{
+                transition:none !important;
+            }
+            
+            input, textarea{
+                padding: 20px;
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                border-radius: 5px;
+
+                @include mobile{
+                    padding: 16px;
+                }
+            }
+            
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            button{
+                padding: 20px;
+                background-color: orange;
+                border: none;
+                cursor: pointer;
+                font-weight: 500;
+
+                @include mobile{
+                    padding: 16px;
+                }
+            }
+        }
+    }
+}
