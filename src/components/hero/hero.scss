@@ -51,16 +51,19 @@
             }
 
             .buttons{
-                button{
+                a{
                     padding: 20px;
                     border: 1px solid white;
                     border-radius: 10px;
                     background-color: transparent;
                     color: white;
                     margin-right: 20px;
-                    cursor: pointer;
+                    cursor: pointer; 
                     font-weight: 300;
 
+                }
+                @include mobile{
+                    margin-top: 20px;
                 }
             }
 

@@ -16,9 +16,9 @@ const NavBar = () => {
           Ashish Bishnoi
         </motion.span>
         <div className="social" >
-          <a href="#" ><i className="fa-brands fa-twitter"></i></a>
-          <a href="#" ><i className="fa-brands fa-linkedin"></i></a>
-          <a href="#" ><i className="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/bishnoi11011" target="_blank" ><i className="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/ashish-bishnoi/" target="_blank" ><i className="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/ashish11011" target="_blank" ><i className="fa-brands fa-github"></i></a>
         </div>
       </div>
     </div>
